@@ -1,0 +1,7 @@
+---
+collections:
+  # Install a collection from Ansible Galaxy.
+  - name: ansible.windows
+    version: ">=1.9.0"
+    source: https://galaxy.ansible.com
+

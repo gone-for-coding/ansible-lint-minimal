@@ -1,0 +1,13 @@
+---
+- name: Configure Windows Systems
+  hosts: all
+  gather_facts: false
+
+  tasks:
+
+    - name: Set Registered Owner
+      ansible.windows.win_regedit:
+        path: HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion
+        name: RegisteredOwner
+        data: Me
+
